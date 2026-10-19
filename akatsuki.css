@@ -277,3 +277,15 @@ body::after {
     text-align: center;
 }
 
+.imagen-general {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.imagen-general img {
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #b00020;
+}
