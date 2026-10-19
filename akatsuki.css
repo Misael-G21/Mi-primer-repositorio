@@ -1,0 +1,279 @@
+body {
+    background-color: #080808;
+    color: white;
+
+    background-image:
+    radial-gradient(
+        ellipse at 15% 35%,
+        rgba(180, 0, 20, 0.30),
+        transparent 45%
+    ),
+    radial-gradient(
+        ellipse at 85% 65%,
+        rgba(120, 0, 15, 0.26),
+        transparent 50%
+    ),
+    radial-gradient(
+        ellipse at 50% 100%,
+        rgba(160, 0, 25, 0.20),
+        transparent 55%
+    ),
+    radial-gradient(
+        ellipse at 50% 0%,
+        rgba(80, 0, 10, 0.18),
+        transparent 50%
+    );
+
+    background-size: 200% 200%;
+    animation: fondoAkatsuki 12s ease-in-out infinite alternate;
+}
+
+@keyframes fondoAkatsuki {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+
+.Tarjeta {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #1a1a1a;
+    border: 2px solid #8b0000;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.Tarjeta img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.Info {
+    flex: 1;
+    min-width: 0;
+}
+
+.Info h2 {
+    margin-top: 0;
+}
+
+.Info ul {
+    padding-left: 20px;
+}
+
+.Info li {
+    overflow-wrap: break-word;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+    .Tarjeta {
+        gap: 10px;
+        padding: 10px;
+        margin: 8px;
+    }
+
+.Tarjeta img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.Tarjeta {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+
+.Tarjeta:hover {
+    transform: translateY(-6px);
+    border-color: #ff2020;
+    box-shadow: 0 0 18px #8b0000;
+}
+
+
+.Tarjeta img {
+    transition: transform 0.3s ease;
+}
+
+.Tarjeta:hover img {
+    transform: scale(1.05);
+}
+
+.Tarjeta h2 {
+    transition: text-shadow 0.3s ease;
+}
+
+.Tarjeta:hover h2 {
+    text-shadow: 0 0 12px currentColor;
+}
+
+
+.Itachi:hover {
+    border-color: #B22222;
+    box-shadow: 0 0 20px #B22222, inset 0 0 25px #B2222233;
+}
+
+.Pain:hover {
+    border-color: #C45A78;
+    box-shadow: 0 0 20px #C45A78, inset 0 0 25px #C45A7833;
+}
+
+.Konan:hover {
+    border-color: #465A91;
+    box-shadow: 0 0 20px #465A91, inset 0 0 25px #465A9133;
+}
+
+.Yahiko:hover {
+    border-color: #E59A32;
+    box-shadow: 0 0 20px #E59A32, inset 0 0 25px #E59A3233;
+}
+
+.Tobi:hover {
+    border-color: #E87524;
+    box-shadow: 0 0 20px #E87524, inset 0 0 25px #E8752433;
+}
+
+.Kisame:hover {
+    border-color: #3A83B8;
+    box-shadow: 0 0 20px #3A83B8, inset 0 0 25px #3A83B833;
+}
+
+.Deidara:hover {
+    border-color: #D6B84C;
+    box-shadow: 0 0 20px #D6B84C, inset 0 0 25px #D6B84C33;
+}
+
+.Sasori:hover {
+    border-color: #9D5544;
+    box-shadow: 0 0 20px #9D5544, inset 0 0 25px #9D554433;
+}
+
+.Hidan:hover {
+    border-color: #A6192E;
+    box-shadow: 0 0 20px #A6192E, inset 0 0 25px #A6192E33;
+}
+
+.Kakuzu:hover {
+    border-color: #52765A;
+    box-shadow: 0 0 20px #52765A, inset 0 0 25px #52765A33;
+}
+
+.Zetsu:hover {
+    border-color: #739B58;
+    box-shadow: 0 0 20px #739B58, inset 0 0 25px #739B5833;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    z-index: -1;
+
+    background-image: url("nube.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    opacity: 0.45;
+    pointer-events: none;
+}
+
+body::before {
+    width: 150px;
+    height: 100px;
+    top: 15%;
+    left: -160px;
+    animation: nubeAkatsuki1 25s linear infinite;
+}
+
+body::after {
+    width: 210px;
+    height: 140px;
+    top: 65%;
+    left: -220px;
+    opacity: 0.25;
+    animation: nubeAkatsuki2 35s linear infinite;
+}
+
+
+@keyframes nubeAkatsuki1 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(120vw);
+    }
+}
+
+@keyframes nubeAkatsuki2 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(120vw);
+    }
+}
+
+
+
+.Encabezado {
+    text-align: center;
+    padding: 30px 20px;
+    margin: 15px;
+}
+
+.Encabezado h1 {
+    font-size: clamp(36px, 8vw, 60px);
+    color: #e02035;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    text-shadow:
+        0 0 10px #8b0000,
+        0 0 25px #8b000088;
+}
+
+.Frase {
+    color: #b5b5b5;
+    font-style: italic;
+    font-size: 17px;
+    margin: 15px 0;
+}
+
+.Separador {
+    width: 100px;
+    height: 3px;
+    background: #a00018;
+    margin: 20px auto;
+    box-shadow: 0 0 12px #a00018;
+}
+
+.Introduccion {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #dddddd;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: center;
+}
+
