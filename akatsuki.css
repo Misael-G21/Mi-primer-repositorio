@@ -282,10 +282,16 @@ body::after {
     margin: 20px auto;
 }
 
+
 .imagen-general img {
+    display: block;
     width: 90%;
-    max-width: 800px;
+    max-width: 650px;
+    max-height: 400px;
     height: auto;
+    object-fit: contain;
+    margin: 0 auto;
     border-radius: 12px;
     box-shadow: 0 0 15px #b00020;
+    box-sizing: border-box;
 }
